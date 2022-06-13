@@ -1,0 +1,72 @@
+body {
+    background-color: #ffc425;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    width: 100vw;
+}
+
+input {
+    border: 0;
+}
+
+#header {
+    align-items: center;
+    display: flex;
+    font-family: Bevan, cursive;
+    font-size: 65px;
+    font-style: italic;
+    height: 20vh;
+    justify-content: center;
+    transform: rotateZ(-5deg);
+    width: 100%;
+}
+
+#searchContainer {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 40vw;
+}
+
+#searchInput {
+    background-color: #fff;
+    font-size: 24px;
+    height: 100%;
+    width: 70%;
+}
+
+#searchButton {
+    background-color: #e13e45;
+    border: 1px solid #000;
+    color: #fff;
+    height: 100%;
+    width: 30%;
+}
+
+#resultsContainer {
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80vw;
+}
+
+#beerContainer {
+    background-color: cornsilk;
+    height: 30vh;
+    margin: 2rem;
+    width: 30%;
+}
+
+#beerContainer::before {
+    content: '';
+    background-color: #e13e45;
+    display: block;
+    height: 7%;
+    width: 100%;
+}
