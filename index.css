@@ -3,6 +3,7 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    font-family: Inter;
     justify-content: center;
     margin: 0;
     width: 100vw;
@@ -37,6 +38,7 @@ input {
     background-color: #fff;
     font-size: 24px;
     height: 100%;
+    padding-left: 1rem;
     width: 70%;
 }
 
@@ -44,29 +46,118 @@ input {
     background-color: #e13e45;
     border: 1px solid #000;
     color: #fff;
+    font-size: 20px;
     height: 100%;
     width: 30%;
 }
 
 #resultsContainer {
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
     width: 80vw;
 }
 
 #beerContainer {
+    align-items: center;
     background-color: cornsilk;
-    height: 30vh;
-    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    margin: 1rem;
+    transition: 500ms;
     width: 30%;
+}
+
+#beerContainer:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 #beerContainer::before {
     content: '';
     background-color: #e13e45;
     display: block;
-    height: 7%;
+    height: 6%;
     width: 100%;
+}
+
+#beerName {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+#beerImage {
+    height: 65%;
+}
+
+#singleContainer {
+    background-color: cornsilk;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+    margin: 1rem;
+    padding: 1rem;
+    width: 50%;
+}
+
+#singleMainContainer {
+    display: flex;
+    height: 40%;
+    width: 100%;
+}
+
+#singleMainImage {
+    object-fit: contain;
+    height: 100%;
+    margin: 1rem;
+    width: 20%;
+}
+
+#singleMainInfoContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 1rem;
+    width: 80%;
+}
+
+#singleMainName {
+    margin: 0;
+}
+
+#singleDetailsContainer {
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+
+#singleDetailsInfoContainer {
+    background-color: aquamarine;
+    height: 100%;
+    width: 70%;
+}
+
+#singleDetailsImage {
+    height: 100%;
+    width: 30%;
+}
+
+#singleButtonContainer {
+    align-items: center;
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    width: 100%;
+}
+
+#singlePurchaseButton {
+    background-color: #e13e45;
+    color: #fff;
+    padding: 5px 10px;
 }
